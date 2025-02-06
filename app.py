@@ -14,7 +14,7 @@ from streamlit_shap import st_shap
 customer = pd.read_csv("Harumanis Grade.csv")
 
 # Preprocessing
-X = customer.drop("Churn", axis=1)
+X = customer.drop("Quality", axis=1)
 y = customer.Churn
 
 # Train-test split
